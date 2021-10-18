@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belisco’s Café Bistrô</title>
     <link rel="stylesheet" href="stylers/StylersCSS.css">
-    <link rel="stylesheet" href="stylers/conteudo.css">
+    <link rel="stylesheet" href="stylers/SliderCSS.css">
 </head>
 <header>
     <nav>
