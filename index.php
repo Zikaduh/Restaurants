@@ -3,16 +3,13 @@
 ?>
 
 <body>
-   <div class="slider">
-       <a href="#" class="next"></a>
-       <a href="#" class="prev"></a>
-
-       <ul>
-           <li class="one"></li>
-           <li class="two"></li>
-           <li class="three"></li> 
-       </ul>
-   </div>
+    <div class="slider">
+        <div class="item">
+            <div class="item"><img src="imagens/Slider/slider-1.jpg"></div>
+            <div class="item"><img src="imagens/Slider/slider-2.jpg"></div>
+            <div class="item"><img src="imagens/Slider/slider-3.jpg"></div>
+        </div>
+    </div>
 </body>
 
 </html>
