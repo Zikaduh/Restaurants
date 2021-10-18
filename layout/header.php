@@ -7,6 +7,7 @@
     <title>Belisco’s Café Bistrô</title>
     <link rel="stylesheet" href="stylers/StylersCSS.css">
     <link rel="stylesheet" href="stylers/Slider.css">
+    <link rel="stylesheet" href="stylers/login.css">
 </head>
 <header>
     <nav>
@@ -32,7 +33,7 @@
     </div>
 
     <div class="painel-login">
-        <a href="#" target="_blank"><h1>Entrar</h1></a>
+        <a href="login.php" target="_blank"><h1>Entrar</h1></a>
     </div>
 
     </nav>
