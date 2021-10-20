@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Stylers/login.css">
 </head>
 <body>
+
+    <link rel="stylesheet" href="Stylers/login.css">
     <div class="center">
+        <input type="checkbox" id="show">
+        <label for="show" class="showLogin"></label>
         <div class="container">
+            <label for="show"><img src="imagens/x.png" alt=""></label>
             <h1>login</h1>
             <form action="#">
             <div class="content">

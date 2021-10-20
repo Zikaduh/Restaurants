@@ -33,7 +33,27 @@
     </div>
 
     <div class="painel-login">
-        <a href="login.php" target="_blank"><h1>Entrar</h1></a>
+    <div class="center">
+        <input type="checkbox" id="show">
+        <label for="show" class="showLogin"><h1>Entrar</h1></label>
+        <div class="container">
+            <label for="show"><img src="imagens/x.png" alt=""></label>
+            <h1>login</h1>
+            <form action="#">
+            <div class="content">
+                <label for="">Email</label>
+                <input type="text" required>
+            </div>
+            <div class="content">
+                <label for="">Senha</label>
+                <input type="password" required>
+            </div>
+            <div class="forgot-password"><a href="#">Esqueceu a senha?</a></div>
+            <div class="btn">
+                <button type="submit">Entrar</button>
+            </div>
+            </form>
+        </div>
     </div>
 
 </nav>

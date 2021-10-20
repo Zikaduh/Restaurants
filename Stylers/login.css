@@ -1,17 +1,6 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
-}
 
-body{
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(to left, #56d8d4, #9f01ea, #56d8e4, #9f01ea);
-}
-
-.container{
+ .container{
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,6 +10,15 @@ body{
   padding: 30px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+
+#show:checked ~.container{
+  display: block;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
 
 .container h1{
   font-size: 35px;
@@ -43,9 +41,14 @@ input{
   width: 100%;
   padding-left: 15px;
   font-size: 15px;
-  border: 1px solid lightgray;
+  border: 1px solid silver;
 }
 
+input:focus{
+border-color: #3498db;
+border-bottom-width: 2px;
+
+}
 .btn{
   margin: 30px 0;
   height: 45px;
@@ -53,15 +56,14 @@ input{
 }
 
 button:hover{
-  width: 120%;
-  height: 120%;
+  padding-bottom: 3px;
 
 }
 
 button{
   height: 100%;
   width: 100%;
-  background: linear-gradient(to left, #F25716, #F2C816,#F2C816, #F25716);
+  background: linear-gradient(to left, #f2a316, #F2C816,#F2C816, #f2a316);
   border: none;
   color: #361B03;
   text-transform: uppercase;
@@ -69,16 +71,23 @@ button{
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 1px;
-  transition: all 2.4s;
+  transition: all 0.4s;
 }
 
-@keyframes slidein {
-  from {
-    height: 100%;
-  }
+a{
+  margin-left: 10px;
+  text-decoration: none;
+}
 
-  to {
-    padding: 120%;
-  }
+a:hover{
+  text-decoration: underline;
+}
+
+.container > label > img{
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
 }
 
