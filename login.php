@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylers/login.css">
+    <link rel="stylesheet" href="Stylers/login.css">
 </head>
 <body>
-
     <div class="center">
         <div class="container">
             <h1>login</h1>
-            <form action="#"></form>
+            <form action="#">
             <div class="content">
                 <label for="">Email</label>
                 <input type="text" required>
@@ -26,10 +25,9 @@
             <div class="btn">
                 <button type="submit">Entrar</button>
             </div>
+            </form>
         </div>
     </div>
 
-
-    
 </body>
 </html>
