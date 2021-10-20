@@ -36,5 +36,5 @@
         <a href="login.php" target="_blank"><h1>Entrar</h1></a>
     </div>
 
-    </nav>
+</nav>
 </header>

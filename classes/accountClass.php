@@ -2,7 +2,7 @@
     class Pessoa
     {
 
-        public function criarConta($nome, $email, $senha)
+        public function createAccount($nome, $sobrenome, $email, $senha, $telefone, $data_nascimento)
         {
         try
             {
@@ -20,10 +20,14 @@
                 }
                 else
                 {
-                    $sql = $pdo->prepare("insert into account (nome, email, senha) values (:nome, :email, :senha)");
+                    $sql = $pdo->prepare("insert into account (nome, sobrenome, nascimento, telefone, email, senha) values (:nome, :sobrenome, :nascimento, :telefone, :email, :senha)");
                     $sql->bindParam(":nome", $nome);
+                    $sql->bindParam(":sobrenome", $sobrenome);
                     $sql->bindParam(":email", $email);
                     $sql->bindParam(":senha", $senha);
+                    $sql->bindParam(":telefone", $telefone);
+                    //criar um regex para pode salva os data de nascimento usando date, mas por enquanto vai fica em varchar mesmo.
+                    $sql->bindParam(":nascimento", $data_nascimento);
                     $sql->execute();
                     echo "conta criada";
                     return true;
@@ -35,6 +39,7 @@
                 echo "erro".$err;
             }
         }
+
     }
 
 
